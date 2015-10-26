@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <style type="text/css">
+    </style>
+    <title>Hello World</title>
+</head>
+
+<body>
+    <div data-role="page" id="home_page">
+        <div data-role="header" data-position="fixed">
+            <h2 class="app-title">Real Estate Searcher</h2>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home_page" data-icon="home" class="ui-btn-active ui-state-persist home">Home</a>
+                    </li>
+                    <li><a href="#search_page" data-icon="search">Search</a>
+                    </li>
+                    <li><a href="#recent_page" data-icon="arrow-r">List</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="main" class="ui-content">
+            <div>
+                <div data-role="collapsible">
+                    <h4>Apartments</h4>
+                    <ul data-role="listview">
+                        <li><a href="#viewPage" onclick="getRealEstate(1)">DODGE AVENUE</a>
+                        </li>
+                        <li><a href="#viewPage" onclick="getRealEstate(2)">HOWARD ST B2</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div data-role="collapsible">
+                    <h4>Individual Houses</h4>
+                    <ul data-role="listview">
+                        <li><a href="#viewPage" onclick="getRealEstate(3)">ASBURY HILLS</a>
+                        </li>
+                        <li><a href="#viewPage" onclick="getRealEstate(4)">GREEN LEAF APTS</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div data-role="collapsible">
+                    <h4>Communites</h4>
+                    <ul data-role="listview">
+                        <li><a href="#viewPage" onclick="getRealEstate(5)">OPTIMA OLD ORCHARD WOODS</a>
+                        </li>
+                        <li><a href="#viewPage" onclick="getRealEstate(6)">MADISON APT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-role="collapsible">
+                    <h4>Recently Added</h4>
+                    <ul data-role="listview">
+                        <li><a href="#viewPage" onclick="getRealEstate(7)">KENNETH AVENUE</a>
+                        </li>
+                        <li><a href="#viewPage" onclick="getRealEstate(8)">LINCOLN AVENUE</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="bxslider" style="height:100%">
+                <li>
+                    <img src="./img/1/1_1.jpeg" />
+
+                    <!--
+                    <img src="./img/hill_trees.jpg" />
+-->
+                </li>
+                <li>
+                    <img src="./img/1/1_2.jpeg" />
+
+                    <!--<img src="./img/me_trees.jpg" />-->
+                </li>
+                <li>
+                    <img src="./img/1/1_3.jpeg" />
+
+                    <!--
+                    <img src="./img/houses.jpg" />
+-->
+                </li>
+            </ul>
+        </div>
+
+
+        <!--<div data-role="footer" class="footer">
+            <h1>Insert Footer Text Here</h1>
+        </div>-->
+    </div>
+    <div data-role="page" id="search_page">
+        <div data-role="header" data-position="fixed">
+            <h2 class="app-title">Real Estate Searcher</h2>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home_page" data-icon="home" home>Home</a>
+                    </li>
+                    <li><a href="#search_page" data-icon="search" class="ui-btn-active ui-state-persist">Search</a>
+                    </li>
+                    <li><a href="#recent_page" data-icon="arrow-r">List</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="main" class="ui-content">
+            <table class="ui-responsive" style="width: 100%;">
+                <tr>
+                    <td>
+                        <select name="type" id="type" data-mini="true">
+                            <!--                             <option selected="selected">Type</option>
+ -->
+                            <option value="apt">Apartments</option>
+                            <option value="ind">Individual</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="bed_room" id="bed_room" data-mini="true">
+                            <option selected="selected" value="">Bed rooms</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <input type="search" name="search" id="search" value="" />
+                    </td>
+                    <td>
+                        <input type="button" id="submit" value="Search" data-mini="true">
+                    </td>
+                </tr>
+            </table>
+            <br/>
+            <div>
+                <ul id="list" data-role="listview"></ul>
+            </div>
+            <!--<div id='result'>
+               
+            </div>-->
+        </div>
+    </div>
+
+    <div data-role="page" id="recent_page">
+        <div data-role="header" data-position="fixed">
+            <h2 class="app-title">Real Estate Searcher</h2>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home_page" data-icon="home" home>Home</a>
+                    </li>
+                    <li><a href="#search_page" data-icon="search">Search</a>
+                    </li>
+                    <li><a href="#recent_page" data-icon="arrow-r" class="ui-btn-active ui-state-persist">List</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="main" class="ui-content">
+            <div>
+                <ul id="fav_list" data-role="listview"></ul>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="page" id="viewPage">
+        <div data-role="header" data-position="fixed">
+            <a data-add-back-btn="true" data-rel="back" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-back">Back</a>
+            <h1 class="ui-title">Property Details</h1>
+            <h3 id='site_name'>Real Estate Searcher</h3>
+            <button id='save_btn' class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-check" data-theme="b">Save</button>
+
+        </div>
+        <div data-role="main" class="ui-content">
+            <div id="gallery">
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <td>Address</td>
+                        <td><span id="address"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SqrFt</td>
+                        <td><span id="sqft"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Type</td>
+                        <td><span id="apttype"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bed rooms</td>
+                        <td><span id="bedroom"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p id="description"></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>Insert Footer Text Here</h1> 
+        </div>
+    </div>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <!--
+    <script type="text/javascript" src="js/index.js"></script>
+-->
+    <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="js/data.json"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</body>
+
+</html>

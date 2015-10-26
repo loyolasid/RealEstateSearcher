@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <style type="text/css">
+        .ui-header .ui-title,
+        .ui-footer .ui-title {
+            height: 23px !important;
+        }
+    </style>
+
+    <title>Hello World</title>
+</head>
+
+<body>
+    <div data-role="page" id="viewPage">
+        <div data-role="header">
+            <a data-add-back-btn="true" data-rel="back" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-back">Back</a>
+            <h1 class="ui-title" id='site_name'>Real Estate Searcher</h1>
+
+            <button class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-check">Save</button>
+
+        </div>
+        <div data-role="main" class="ui-content">
+            <div id="gallery">
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <td>Address</td>
+                        <td><span id="address"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>SqrFt</td>
+                        <td><span id="sqft"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Type</td>
+                        <td><span id="type"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bed rooms</td>
+                        <td><span id="bedroom"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p id="description"></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>Insert Footer Text Here</h1>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+<script type="text/javascript" src="js/data.json"></script>
+<!--
+<script type="text/javascript" src="js/custom.js"></script>
+-->
+<script type="text/javascript">
+    $(document).ready(function() {
+       $('$site_name').html(alert(gup('name')));
+        $("#address").val(selected.address);
+        $("#sqft").val(300);
+        $("#description").val(selected.description);
+        $("#bedroom").val(selected.bedrooms);
+        if (selected.type == 'apt') {
+            $("#type").val("Apartment");
+        } else {
+            $("#type").val("Individual House");
+        }
+    });
+
+    function gup(name) {
+        var url = location.href
+        name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+        var regexS = "[\\?&]" + name + "=([^&#]*)";
+        var regex = new RegExp(regexS);
+        var results = regex.exec(url);
+        return results == null ? null : results[1];
+    }
+</script>
+
+</html>

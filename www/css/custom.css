@@ -1,0 +1,28 @@
+ .bx-wrapper,
+ .bx-viewport {
+     height: 200px !important; //provide height of slider
+ }
+ .bx-wrapper img {
+     height: 350px !important;
+     width: 350px !important;
+ }
+ .app-title {
+     text-align: left !important;
+     width: 100%;
+     margin-left: 12px !important;
+ }
+ #type,
+ #select {
+     width: 100px !important;
+ }
+ #gallery_view li,
+ .bx-wrapper li {
+     width: 350px !important;
+ }
+ #description {
+     text-align: justify;
+ }
+.bx-wrapper .bx-controls-direction a {
+   
+    z-index: 0 !important;
+}

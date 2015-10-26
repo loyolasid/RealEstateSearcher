@@ -1,0 +1,496 @@
+var data=[
+    {
+        "id": 1,
+        "name": "DODGE AVENUE , 705",
+        "latlong": "17.4339907,78.4416412",
+        "address": "DODGE AVENUE , 705, EVANSTON, CHICAGO",
+        "type": "apt",
+        "images": [
+            "1_1.jpeg",
+            "1_2.jpeg",
+            "1_3.jpeg"
+        ],
+        "bedrooms": "2",
+        "favourite": 0,
+        "description": "Designed with your lifestyle in mind, 500 Lake Shore Drive &#39; s luxury metropolitan apartments are just steps away from the lakefront path, Navy Pier and Chicago &#39; s famed beaches. This pet-friendly luxury apartment complex, complete with a lushly landscaped deck, places you among the city &#39; s iconic skyscrapers and allows you to experience the sophistication of Chicago."
+    },
+    {
+        "id": 2,
+        "name": "HOWARD ST B2",
+        "latlong": "17.4339907,78.4416412",
+        "address": "HOWARD ST B2, EVANSTON, CHICAGO",
+        "type": "ind",
+        "images": [
+            "2_1.jpeg",
+            "2_2.jpeg",
+            "2_3.jpeg"
+        ],
+        "bedrooms": "2",
+        "favourite": 0,
+        "description": "Impress friends when you invite them over to your modern, high-rise apartment. Not only will they be captivated by the surrounding city and lake views, but they will be envious of your newly designed apartment. The apartments at Pensacola Place have been renovated to include modern kitchen cabinets, granite counter-tops, Frigidaire Clean Steel Appliances, and select apartments also feature Shale entryway flooring. It &#39; s the perfect time to call Pensacola Place home!"
+    },
+    {
+        "id": 3,
+        "name": "ASBURY HILLS",
+        "latlong": "17.4339907,78.4416412",
+        "address": "ASBURY HILLS, EVANSTON, CHICAGO",
+        "type": "apt",
+        "images": [
+            "3_1.jpeg",
+            "3_2.jpeg",
+            "3_3.jpeg"
+        ],
+        "bedrooms": "3",
+        "favourite": 0,
+        "description": "IThoughtfully furnished with floor-to-ceiling windows, wide-plank floors and custom state-of-the-art kitchens, 500 Lake Shore Drive &#39; s luxury apartments feature stunning lake and skyline view that allow you to feel immediately at home. In-home washers and dryers complement an array of apartment features, including a 24-hour lobby and concierge, tech center, deck overlooking Lake Michigan, cafe, fitness center, library, screening room with integrated wet-bar, game room, party room, dog care facility, bike storage and parking garage."
+    },
+    {
+        "id": 4,
+        "name": "GREEN LEAF APTS",
+        "latlong": "17.4339907,78.4416412",
+        "address": " GREEN LEAF APTS, SKOKIE CHICAGO",
+        "type": "ind",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "2",
+        "favourite": 0,
+        "description": "Live in this studio which is located near the Diversey, Clark and Broadway intersection. This location offers plenty of options for shopping, bars and restaurants. Just an 8 minute walk to the Diversey Stop. Take the Purple line to the Loop or go express to Evanston. The Brown line can take you to the Loop, transfer to the Red line at Fullerton or Belmont and bring you to Lakeview, Lincoln Square or Albany Park. Studios in this building feature meduim size layouts with some featuring large kitchens. Pictures may not be of the exact studio but are to show room size and examples of finishes in the building. No security deposit required! Pet friendly."
+    },
+    {
+        "id": 5,
+        "name": "OPTIMA OLD ORCHARD WOODS",
+        "latlong": "17.4339907,78.4416412",
+        "address": " OPTIMA OLD ORCHARD WOODS, SKOKIE CHICAGO",
+        "type": "apt",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "3",
+        "favourite": 0,
+        "description": "2nd floor - Breathtaking 2-bedroom, 2-bath apartment on the southeast corner with fully unobstructed views of Lake Michigan. The apartment features a very large living space, floor-to-ceiling glass, open kitchen, dual-sinks in the main bedroom with a walk-in glass shower, plus wide-plank floors throughout, including bedrooms. Contact us today to learn more!"
+    },
+    {
+        "id": 6,
+        "name": "MADISON APT",
+        "latlong": "17.4339907,78.4416412",
+        "address": " MADISON APT, SKOKIE,  CHICAGO",
+        "type": "ind",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "2",
+        "favourite": 0,
+        "description": "Become a valued Regus client and take full advantage of the Regus Purchasing Group. A discount plan that Regus offers to all clients due to their partnerships with businesses such as: staples, budget, zipcar, American Airlines and many more! You should take advantage of the discounts that Regus offers our valued clients... And I know you will."
+    },
+    {
+        "id": 7,
+        "name": "7228 N KENNETH AVENUE",
+        "latlong": "17.4339907,78.4416412",
+        "address": " 7228 N KENNETH AVENUE, LINCOLN WOOD CHICAGO",
+        "type": "ind",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "3",
+        "favourite": 0,
+        "description": "Spacious two bedroom, one bathroom on Kingston. This unit has beautiful, polished hardwood floors and has just been painted. Unit has two bedrooms, master can fit a queen size or king size bed. Updated bathroom and kitchen, huge living room, tons on natural light. Close to public transportation and the Metra."
+    },
+    {
+        "id": 8,
+        "name": "6739N KIMBALL AVENUE",
+        "latlong": "17.4339907,78.4416412",
+        "address": " 6739N KIMBALL AVENUE, LINCOLN WOOD CHICAGO",
+        "type": "apt",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "2",
+        "favourite": 0,
+        "description": "Come make this preferred address yours! 65-foot frontage of some of the Best Beach on the lake for swimming. Spacious lot. New construction. 5 bdrm 5.5 baths in this 4400 sq ft lake house. Hardwoods throughout, granite surfaces, Great Room with fireplace open from kitchen and dining. Grand open staircase complements three levels of living. Second level Game Room plus third level waterside reading room if you simply want some space away from the crowd! A/V & security system throughout. Outdoor shower. New pier. Watch the gorgeous sunsets from your porch whilst enjoying your favorite beverage after another day at the lake, or s &#39; mores over the fire pit in your lakeside patio, perfect place to start making those forever lake memories with family and friends. Possible owner financing."
+    },
+    {
+        "id": 9,
+        "name": "N.LINCOLN AVENUE",
+        "latlong": "17.4339907,78.4416412",
+        "address": " N.LINCOLN AVENUE, LINCOLN WOOD CHICAGO",
+        "type": "ind",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "1",
+        "favourite": 0,
+        "description": "This channel front lake home located on one of the nicest widest channels on The Lake, and you are literally two minutes off the main body, with views of Johnson &#39; s Bay from your side deck. Beautiful Lake Wawasee offers 3400 acres of year round sports, from summer skiing, wakeboarding & sailing clubs to winter ice boating, ice fishing and cross country skiing. A preferred lake for vacationing from surrounding states, second to none for lakes entertainment and enjoyment; this is perfect for that special  &#39; get away from it all &#39;  place. Loft bunkroom plus bedrooms offer sleeping for up to 13, plus sofas if needed. Tidy, clean, very attractive interior, well maintained exterior. All furnishings as listed on Addendum. Open living, dining, kitchen. Generous sized decks waterside; perfect for that morning coffee or evening beverage. There is no Rush Hour on the lake, only Happy Hours. . .making memories with family and friends."
+    },
+    {
+        "id": 10,
+        "name": "GRACELAND AVENUE",
+        "latlong": "17.4339907,78.4416412",
+        "address": " GRACELAND AVENUE, DESPLAINES CHICAGO",
+        "type": "ind",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "1",
+        "favourite": 0,
+        "description": "A relaxing neighborhood just moments away from the hustle and bustle of downtown Chicago. Prairie Shores is located in Bronzeville and in the neighborhood of some of the nation &#39; s most sought after schools: the University of Illinois at Chicago, the University of Chicago, Columbia College, and the Illinois Institute of Technology. For your convenience, the leasing office is open daily and emergency maintenance is available around the clock. Availability changes daily so please call to check current rents on apartments."
+    },
+    {
+        "id": 11,
+        "name": "1330 HARDING AVENUE",
+        "latlong": "17.4339907,78.4416412",
+        "address": "1330 HARDING AVENUE, DESPLAINES CHICAGO",
+        "type": "ind",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "2",
+        "favourite": 0,
+        "description": "Designed with your lifestyle in mind, 500 Lake Shore Drive &#39; s luxury metropolitan apartments are just steps away from the lakefront path, Navy Pier and Chicago &#39; s famed beaches. This pet-friendly luxury apartment complex, complete with a lushly landscaped deck, places you among the city &#39; s iconic skyscrapers and allows you to experience the sophistication of Chicago."
+    },
+    {
+        "id": 12,
+        "name": "KINGSTON POINT",
+        "latlong": "17.4339907,78.4416412",
+        "address": "KINGSTON POINT, DESPLAINES CHICAGO",
+        "type": "apt",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "4",
+        "favourite": 0,
+        "description": "Impress friends when you invite them over to your modern, high-rise apartment. Not only will they be captivated by the surrounding city and lake views, but they will be envious of your newly designed apartment. The apartments at Pensacola Place have been renovated to include modern kitchen cabinets, granite counter-tops, Frigidaire Clean Steel Appliances, and select apartments also feature Shale entryway flooring. It &#39; s the perfect time to call Pensacola Place home!"
+    },
+    {
+        "id": 13,
+        "name": "4712 N OLCOTT AVENUE",
+        "latlong": "17.4339907,78.4416412",
+        "address": "4712 N OLCOTT AVENUE, HARWOOD HEIGHTS, CHICAGO",
+        "type": "ind",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "4",
+        "favourite": 0,
+        "description": "IThoughtfully furnished with floor-to-ceiling windows, wide-plank floors and custom state-of-the-art kitchens, 500 Lake Shore Drive &#39; s luxury apartments feature stunning lake and skyline view that allow you to feel immediately at home. In-home washers and dryers complement an array of apartment features, including a 24-hour lobby and concierge, tech center, deck overlooking Lake Michigan, cafe, fitness center, library, screening room with integrated wet-bar, game room, party room, dog care facility, bike storage and parking garage."
+    },
+    {
+        "id": 14,
+        "name": "W FOREST PRESERVE AVENUE",
+        "latlong": "17.4339907,78.4416412",
+        "address": "W FOREST PRESERVE AVENUE, HARWOOD HEIGHTS, CHICAGO",
+        "type": "ind",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "3",
+        "favourite": 0,
+        "description": "Live in this studio which is located near the Diversey, Clark and Broadway intersection. This location offers plenty of options for shopping, bars and restaurants. Just an 8 minute walk to the Diversey Stop. Take the Purple line to the Loop or go express to Evanston. The Brown line can take you to the Loop, transfer to the Red line at Fullerton or Belmont and bring you to Lakeview, Lincoln Square or Albany Park. Studios in this building feature meduim size layouts with some featuring large kitchens. Pictures may not be of the exact studio but are to show room size and examples of finishes in the building. No security deposit required! Pet friendly."
+    },
+    {
+        "id": 15,
+        "name": "MONTROSE AVENUE",
+        "latlong": "17.4339907,78.4416412",
+        "address": "MONTROSE AVENUE, HARWOOD HEIGHTS, CHICAGO",
+        "type": "apt",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "2",
+        "favourite": 0,
+        "description": "2nd floor - Breathtaking 2-bedroom, 2-bath apartment on the southeast corner with fully unobstructed views of Lake Michigan. The apartment features a very large living space, floor-to-ceiling glass, open kitchen, dual-sinks in the main bedroom with a walk-in glass shower, plus wide-plank floors throughout, including bedrooms. Contact us today to learn more!"
+    },
+    {
+        "id": 16,
+        "name": "RUBY SQUARE",
+        "latlong": "17.4339907,78.4416412",
+        "address": "RUBY SQUARE, NORTH LAKE, CHICAGO",
+        "type": "ind",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "2",
+        "favourite": 0,
+        "description": "Become a valued Regus client and take full advantage of the Regus Purchasing Group. A discount plan that Regus offers to all clients due to their partnerships with businesses such as: staples, budget, zipcar, American Airlines and many more! You should take advantage of the discounts that Regus offers our valued clients... And I know you will."
+    },
+    {
+        "id": 17,
+        "name": "GENEVA AVENUE",
+        "latlong": "17.4339907,78.4416412",
+        "address": "4712 N OLCOTT AVENUE, BERKELEY, CHICAGO",
+        "type": "apt",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "3",
+        "favourite": 0,
+        "description": "Spacious two bedroom, one bathroom on Kingston. This unit has beautiful, polished hardwood floors and has just been painted. Unit has two bedrooms, master can fit a queen size or king size bed. Updated bathroom and kitchen, huge living room, tons on natural light. Close to public transportation and the Metra."
+    },
+    {
+        "id": 18,
+        "name": "MORGAN ST AVENUE",
+        "latlong": "17.4339907,78.4416412",
+        "address": "MORGAN ST AVENUE, ROCHESTER, NEWYORK",
+        "type": "ind",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "2",
+        "favourite": 0,
+        "description": "Come make this preferred address yours! 65-foot frontage of some of the Best Beach on the lake for swimming. Spacious lot. New construction. 5 bdrm 5.5 baths in this 4400 sq ft lake house. Hardwoods throughout, granite surfaces, Great Room with fireplace open from kitchen and dining. Grand open staircase complements three levels of living. Second level Game Room plus third level waterside reading room if you simply want some space away from the crowd! A/V & security system throughout. Outdoor shower. New pier. Watch the gorgeous sunsets from your porch whilst enjoying your favorite beverage after another day at the lake, or s &#39; mores over the fire pit in your lakeside patio, perfect place to start making those forever lake memories with family and friends. Possible owner financing."
+    },
+    {
+        "id": 19,
+        "name": "OXFORD APTS",
+        "latlong": "17.4339907,78.4416412",
+        "address": "OXFORD APTS, ROCHESTER, NEWYORK",
+        "type": "ind",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "1",
+        "favourite": 0,
+        "description": "This channel front lake home located on one of the nicest widest channels on The Lake, and you are literally two minutes off the main body, with views of Johnson &#39; s Bay from your side deck. Beautiful Lake Wawasee offers 3400 acres of year round sports, from summer skiing, wakeboarding & sailing clubs to winter ice boating, ice fishing and cross country skiing. A preferred lake for vacationing from surrounding states, second to none for lakes entertainment and enjoyment; this is perfect for that special  &#39; get away from it all &#39;  place. Loft bunkroom plus bedrooms offer sleeping for up to 13, plus sofas if needed. Tidy, clean, very attractive interior, well maintained exterior. All furnishings as listed on Addendum. Open living, dining, kitchen. Generous sized decks waterside; perfect for that morning coffee or evening beverage. There is no Rush Hour on the lake, only Happy Hours. . .making memories with family and friends."
+    },
+    {
+        "id": 20,
+        "name": "HH WARNER LOFTS",
+        "latlong": "17.4339907,78.4416412",
+        "address": "HH WARNER LOFTS, ROCHESTER, NEWYORK",
+        "type": "apt",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "2",
+        "favourite": 0,
+        "description": "A relaxing neighborhood just moments away from the hustle and bustle of downtown Chicago. Prairie Shores is located in Bronzeville and in the neighborhood of some of the nation &#39; s most sought after schools: the University of Illinois at Chicago, the University of Chicago, Columbia College, and the Illinois Institute of Technology. For your convenience, the leasing office is open daily and emergency maintenance is available around the clock. Availability changes daily so please call to check current rents on apartments."
+    },
+    {
+        "id": 21,
+        "name": "AVALON WHITE PLAINES",
+        "latlong": "17.4339907,78.4416412",
+        "address": "AVALON WHITE PLAINES, WHITE PLAINES, NEWYORK",
+        "type": "ind",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "2",
+        "favourite": 0,
+        "description": "Come make this preferred address yours! 65-foot frontage of some of the Best Beach on the lake for swimming. Spacious lot. New construction. 5 bdrm 5.5 baths in this 4400 sq ft lake house. Hardwoods throughout, granite surfaces, Great Room with fireplace open from kitchen and dining. Grand open staircase complements three levels of living. Second level Game Room plus third level waterside reading room if you simply want some space away from the crowd! A/V & security system throughout. Outdoor shower. New pier. Watch the gorgeous sunsets from your porch whilst enjoying your favorite beverage after another day at the lake, or s &#39; mores over the fire pit in your lakeside patio, perfect place to start making those forever lake memories with family and friends. Possible owner financing."
+    },
+    {
+        "id": 22,
+        "name": "MARTINE AVENUE",
+        "latlong": "17.4339907,78.4416412",
+        "address": "MARTINE AVENUE, WHITE PLAINES, NEWYORK",
+        "type": "apt",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "1",
+        "favourite": 0,
+        "description": "Live in this studio which is located near the Diversey, Clark and Broadway intersection. This location offers plenty of options for shopping, bars and restaurants. Just an 8 minute walk to the Diversey Stop. Take the Purple line to the Loop or go express to Evanston. The Brown line can take you to the Loop, transfer to the Red line at Fullerton or Belmont and bring you to Lakeview, Lincoln Square or Albany Park. Studios in this building feature meduim size layouts with some featuring large kitchens. Pictures may not be of the exact studio but are to show room size and examples of finishes in the building. No security deposit required! Pet friendly."
+    },
+    {
+        "id": 23,
+        "name": "ONE CITY PLACE",
+        "latlong": "17.4339907,78.4416412",
+        "address": "ONE CITY PLACE, WHITE PLAINES, NEWYORK",
+        "type": "ind",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "3",
+        "favourite": 0,
+        "description": "Come make this preferred address yours! 65-foot frontage of some of the Best Beach on the lake for swimming. Spacious lot. New construction. 5 bdrm 5.5 baths in this 4400 sq ft lake house. Hardwoods throughout, granite surfaces, Great Room with fireplace open from kitchen and dining. Grand open staircase complements three levels of living. Second level Game Room plus third level waterside reading room if you simply want some space away from the crowd! A/V & security system throughout. Outdoor shower. New pier. Watch the gorgeous sunsets from your porch whilst enjoying your favorite beverage after another day at the lake, or s &#39; mores over the fire pit in your lakeside patio, perfect place to start making those forever lake memories with family and friends. Possible owner financing."
+    },
+    {
+        "id": 24,
+        "name": "CRESCENT ST",
+        "latlong": "17.4339907,78.4416412",
+        "address": "CRESCENT ST, LONG ISLAND, NEWYORK",
+        "type": "ind",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "2",
+        "favourite": 0,
+        "description": "Impress friends when you invite them over to your modern, high-rise apartment. Not only will they be captivated by the surrounding city and lake views, but they will be envious of your newly designed apartment. The apartments at Pensacola Place have been renovated to include modern kitchen cabinets, granite counter-tops, Frigidaire Clean Steel Appliances, and select apartments also feature Shale entryway flooring. It &#39; s the perfect time to call Pensacola Place home!"
+    },
+    {
+        "id": 25,
+        "name": "JACKSON AVENUE",
+        "latlong": "17.4339907,78.4416412",
+        "address": "CRESCENT ST, LONG ISLAND, NEWYORK",
+        "type": "apt",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "2",
+        "description": "Come make this preferred address yours! 65-foot frontage of some of the Best Beach on the lake for swimming. Spacious lot. New construction. 5 bdrm 5.5 baths in this 4400 sq ft lake house. Hardwoods throughout, granite surfaces, Great Room with fireplace open from kitchen and dining. Grand open staircase complements three levels of living. Second level Game Room plus third level waterside reading room if you simply want some space away from the crowd! A/V & security system throughout. Outdoor shower. New pier. Watch the gorgeous sunsets from your porch whilst enjoying your favorite beverage after another day at the lake, or s &#39; mores over the fire pit in your lakeside patio, perfect place to start making those forever lake memories with family and friends. Possible owner financing."
+    },
+    {
+        "id": 26,
+        "name": "METRO 303",
+        "latlong": "17.4339907,78.4416412",
+        "address": "METRO 303, HEMPSTEAD,  NEWYORK",
+        "type": "ind",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "2",
+        "favourite": 0,
+        "description": "Impress friends when you invite them over to your modern, high-rise apartment. Not only will they be captivated by the surrounding city and lake views, but they will be envious of your newly designed apartment. The apartments at Pensacola Place have been renovated to include modern kitchen cabinets, granite counter-tops, Frigidaire Clean Steel Appliances, and select apartments also feature Shale entryway flooring. It &#39; s the perfect time to call Pensacola Place home!"
+    },
+    {
+        "id": 27,
+        "name": "AMBOY RD",
+        "latlong": "17.4339907,78.4416412",
+        "address": "AMBOY RD, STATEN ISLAND,  NEWYORK",
+        "type": "ind",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "2",
+        "favourite": 0,
+        "description": "2nd floor - Breathtaking 2-bedroom, 2-bath apartment on the southeast corner with fully unobstructed views of Lake Michigan. The apartment features a very large living space, floor-to-ceiling glass, open kitchen, dual-sinks in the main bedroom with a walk-in glass shower, plus wide-plank floors throughout, including bedrooms. Contact us today to learn more!"
+    },
+    {
+        "id": 28,
+        "name": "NAUHGTON AVENUE",
+        "latlong": "17.4339907,78.4416412",
+        "address": "NAUHGTON AVENUE, STATEN ISLAND,  NEWYORK",
+        "type": "apt",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "1",
+        "favourite": 0,
+        "description": "Live in this studio which is located near the Diversey, Clark and Broadway intersection. This location offers plenty of options for shopping, bars and restaurants. Just an 8 minute walk to the Diversey Stop. Take the Purple line to the Loop or go express to Evanston. The Brown line can take you to the Loop, transfer to the Red line at Fullerton or Belmont and bring you to Lakeview, Lincoln Square or Albany Park. Studios in this building feature meduim size layouts with some featuring large kitchens. Pictures may not be of the exact studio but are to show room size and examples of finishes in the building. No security deposit required! Pet friendly."
+    },
+    {
+        "id": 29,
+        "name": "PENNSBURG COURT",
+        "latlong": "17.4339907,78.4416412",
+        "address": "PENNSBURG COURT, YONKERS,  NEWYORK",
+        "type": "apt",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "2",
+        "favourite": 0,
+        "description": "Impress friends when you invite them over to your modern, high-rise apartment. Not only will they be captivated by the surrounding city and lake views, but they will be envious of your newly designed apartment. The apartments at Pensacola Place have been renovated to include modern kitchen cabinets, granite counter-tops, Frigidaire Clean Steel Appliances, and select apartments also feature Shale entryway flooring. It &#39; s the perfect time to call Pensacola Place home!"
+    },
+    {
+        "id": 30,
+        "name": "K LOCKNER WOODS",
+        "latlong": "17.4339907,78.4416412",
+        "address": "K LOCKNER WOODS, YONKERS,  NEWYORK",
+        "type": "ind",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "2",
+        "favourite": 0,
+        "description": "2nd floor - Breathtaking 2-bedroom, 2-bath apartment on the southeast corner with fully unobstructed views of Lake Michigan. The apartment features a very large living space, floor-to-ceiling glass, open kitchen, dual-sinks in the main bedroom with a walk-in glass shower, plus wide-plank floors throughout, including bedrooms. Contact us today to learn more!"
+    },
+    {
+        "id": 33,
+        "name": "SEA VALLEY APTS",
+        "latlong": "17.4339907,78.4416412",
+        "address": "SEA VALLEY APTS, BRONX,  NEWYORK",
+        "type": "apt",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "1",
+        "favourite": 0,
+        "description": "A relaxing neighborhood just moments away from the hustle and bustle of downtown Chicago. Prairie Shores is located in Bronzeville and in the neighborhood of some of the nation &#39; s most sought after schools: the University of Illinois at Chicago, the University of Chicago, Columbia College, and the Illinois Institute of Technology. For your convenience, the leasing office is open daily and emergency maintenance is available around the clock. Availability changes daily so please call to check current rents on apartments."
+    },
+    {
+        "id": 34,
+        "name": "NATHERLAND AVENUE",
+        "latlong": "17.4339907,78.4416412",
+        "address": "NATHERLAND AVENUE, BRONX,  NEWYORK",
+        "type": "ind",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "2",
+        "favourite": 0,
+        "description": "IThoughtfully furnished with floor-to-ceiling windows, wide-plank floors and custom state-of-the-art kitchens, 500 Lake Shore Drive &#39; s luxury apartments feature stunning lake and skyline view that allow you to feel immediately at home. In-home washers and dryers complement an array of apartment features, including a 24-hour lobby and concierge, tech center, deck overlooking Lake Michigan, cafe, fitness center, library, screening room with integrated wet-bar, game room, party room, dog care facility, bike storage and parking garage."
+    },
+    {
+        "id": 35,
+        "name": "3RD AVENUE",
+        "latlong": "17.4339907,78.4416412",
+        "address": "3RD AVENUE, BROCENTRAL PARK, NEWYORK",
+        "type": "apt",
+        "images": [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ],
+        "bedrooms": "4",
+        "favourite": 0,
+        "description": "This channel front lake home located on one of the nicest widest channels on The Lake, and you are literally two minutes off the main body, with views of Johnson &#39; s Bay from your side deck. Beautiful Lake Wawasee offers 3400 acres of year round sports, from summer skiing, wakeboarding & sailing clubs to winter ice boating, ice fishing and cross country skiing. A preferred lake for vacationing from surrounding states, second to none for lakes entertainment and enjoyment; this is perfect for that special  &#39; get away from it all &#39;  place. Loft bunkroom plus bedrooms offer sleeping for up to 13, plus sofas if needed. Tidy, clean, very attractive interior, well maintained exterior. All furnishings as listed on Addendum. Open living, dining, kitchen. Generous sized decks waterside; perfect for that morning coffee or evening beverage. There is no Rush Hour on the lake, only Happy Hours. . .making memories with family and friends."
+    }
+]
